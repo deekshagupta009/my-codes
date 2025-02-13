@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #mydiv{
+            display:flex;
+            border: 5px solid black;
+            width:110px;
+            background-color: rgb(204, 148, 75);
+        }
+        
+        
+        
+    </style>
+    <script>
+function displayTime(){
+    let dt=new Date();
+    let hrs=dt.getHours();
+    let min=dt.getMinutes();
+    let sec=dt.getSeconds();
+    if(hrs>=10){
+        document.getElementById("hrs").innerHTML=hrs+":";
+    }
+    else{
+        document.getElementById("hrs").innerHTML="0"+hrs+":";
+    }
+    document.getElementById("min").innerHTML=min+":";
+    if(hrs>=12){
+        document.getElementById("sec").innerHTML=sec+" pm";
+    }
+    else{
+        document.getElementById("sec").innerHTML=sec+" am";
+    }
+}
+setInterval(displayTime,1000);
+    </script>
+</head>
+<body>
+    </body>
+    <h1>CLOCK</h1>
+    <div id="mydiv" >
+        <p id="hrs"></p>
+        <p id="min"></p>
+        <p id="sec"></p>
+    </div>
+</body>
+</html>
