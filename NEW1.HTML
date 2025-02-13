@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <style>
+        body, .Find {
+           
+            background-image: url('https://cdn.shopify.com/s/files/1/0428/1119/5548/files/allinone-image2.jpg?v=1658935257'); 
+            font-family: 'Montserrat', sans-serif;
+            color:black;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .cd__main {
+            min-height: 720px;
+            position: relative;
+        }
+
+        .login {
+            position: relative;
+            height: 560px;
+            width: 405px;
+            margin: auto;
+            padding: 60px 60px;
+            background-color: #d3d3d3;
+            background-size: cover;
+            box-shadow: 0px 30px 60px -5px #000;
+        }
+
+        form {
+            padding-top: 80px;
+        }
+
+        .active {
+            border-bottom: 2px solid #18191a;
+        }
+
+        .nonactive {
+            color: rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            padding-left: 12px;
+            font-size: 22px;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            letter-spacing: 2px;
+            display: inline-block;
+            font-weight: 100;
+        }
+
+        h2:first-child {
+            padding-left: 0px;
+        }
+
+        span {
+            text-transform: uppercase;
+            font-size: 12px;
+            opacity: 3.0;
+            display: inline-block;
+            position: relative;
+            top: -65px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .text {
+            border: solid gray;
+            width: 89%;
+            padding: 10px 20px;
+            display: block;
+            height: 15px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgb(0,0,0);
+        }
+      
+
+ .btn {
+            display: block;
+            height: 50px;
+            width: 50%;
+            padding: 15px;
+            background-color: #222222;
+            color: #ffffff;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #image{
+            vertical-align: middle; /* Align image vertically */
+            margin-left: 10px;
+    
+            height: 50px;
+            width: 60px;
+        }
+    
+
+    
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2 class="active">Find your Route</h2>
+    
+        <img src="placeholder[1].png" id="image" alt="location"/>
+      
+        <form>
+            <input type="text" class="text" name="Your Location" id="fullname" placeholder="Enter your location">
+            <span>Location</span><br><br>
+            <input type="text" class="text" name="your destination" id="password" placeholder="Enter your destination">
+            <span>Destination</span><br>
+            <pre>
+        <center>
+            <button class="btn">Search</button></center></pre>
+            <hr>
+                
+        </form>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#FIND").clic(function(){
+var name=$("#your Location").val();
+var password=$("#destination").val();
+});
+});
+</script>
+
+
+</body>
+</html>
